@@ -19,6 +19,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/students',\App\Livewire\StudentList::class)->name('student.index');
     Route::get('/students/create',\App\Livewire\CreateStudent::class)->name('student.create');
     Route::get('/students/{student}/edit',\App\Livewire\EditStudent::class)->name('student.edit');
+
+    Route::get('/departments',\App\Livewire\DepartmentList::class)->name('department.index');
+    Route::get('/departments/create',\App\Livewire\DepartmentCreate::class)->name('department.create');
+    Route::get('/departments/{department}/edit',\App\Livewire\DepartmentEdit::class)->name('department.edit');
 });
 
 require __DIR__.'/auth.php';

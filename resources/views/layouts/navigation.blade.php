@@ -18,6 +18,9 @@
                     <x-nav-link wire:navigate :href="route('student.index')" :active="request()->routeIs('student.index')">
                         {{ __('Students') }}
                     </x-nav-link>
+                    <x-nav-link wire:navigate :href="route('department.index')" :active="request()->routeIs('department.index')">
+                        {{ __('Departments') }}
+                    </x-nav-link>
                 </div>
             </div>
 
